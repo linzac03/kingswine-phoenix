@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="column">
+    <h3>
+      Investigator <span id="user"><%= @conn.params["user"] %></span>
+    </h3>
+    <div id="gameState">
+      <div id="casks">
+        O O O O O <br />
+        O O O O O <br />
+        O O O O O <br />
+        O O O O O <br />
+      </div>
+      <div id="servants">
+        | | | | | | | | | | 
+      </div>
+    </div>
+  </div>
+  <div class="column column-25">
+    <h3>Action Log</h3>
+    <ul id="actionLog" class="action-log"> </ul>
+    <input type="text" id="playerAction" class="form-control" placeholder="Your action..." />
+  </div>
+</div>
